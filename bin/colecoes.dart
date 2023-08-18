@@ -1,6 +1,53 @@
 void main (List<String> arguments){
+  var portugues = {'Brasil', 'Portugal'};
+  var europa = {'Alemanha', 'Portugal', 'Espanha'};
+
+  //Todos os países em que se fala português e todos os países da Europa
+  print(portugues.union(europa));
+  //Todos os países em que se fala português e que são europeus.
+  print(portugues.intersection(europa));
+  //Todos os países em que se fala português e que não são europeus
+  print(portugues.difference(europa));
+  //Todos os países exceto aqueles em que se fala português e que são europeus
+  print(portugues.union(europa).difference(portugues.intersection(europa)));
+}
+
+// void main (List<String> arguments){
+//   //conjuntos
+//   //{1, 2} == {2, 1} == {1, 1, 1, 1, 1, 2, 2,}
+
+//   var A = {1, 2, 3, 4, 5, 6};
+//   var B = {1, 3, 7};
+//   print(A.union(B)); // 1, 2, 3, 4, 5, 6, 7
+//   print(A.intersection(B)); // 1, 3
+//   print(A.difference(B)); // 2, 4, 5, 6
+//   print(B.difference(A)); // 7
+//   print(A.difference(A)); // {}
+
+
+  // var nomes = {'Ana', 'Pedro'};
+  // print(nomes.elementAt(0));
+  // for (int i = 0; i < nomes.length; i++){
+  //   print(nomes.elementAt(i));
+  // }
+  //var eAgora = <String>{};
+  // var nomes = {'Ana', 'Pedro', 'Maria'}; //Set<String>
+  // var teste = {}; // Map<dynamic, dynamic>
+  // var paises = {'Brasil', 'Brasil'};
+
+  // var nome = stdin.readLineSync();
+  // var pessoa = (nome, 18);
+  // print(pessoa);
+
+  //tuplas (lista imutavel)
+  //tambem chamadas de records
+  // var tupla = ('Ana', 18, true);
+  // print(tupla);
+  // print(tupla.$1);
+  // print(tupla.runtimeType);
+
+
   //sound null safety
-  
   
   //List <List<int?>?>? inteiros;
 
@@ -33,7 +80,7 @@ void main (List<String> arguments){
   // nomes.add('João');
   //Isso nao vale
   //nomes = [];
-}
+//}
 
 // import 'dart:math';
 // import 'dart:io';
