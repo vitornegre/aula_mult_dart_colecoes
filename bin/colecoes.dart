@@ -1,19 +1,56 @@
-import 'dart:math';
-import 'dart:io';
-void exercicio2(){
-  List <int> listaEntradas = [];
-  while (listaEntradas.length<6) {
-    print("Digite um número: ");
-    var entrada = stdin.readLineSync()!;
-    var numero = int.parse(entrada);
-    if(!listaEntradas.contains(numero)){
-      listaEntradas.add(numero);
-    }
-    else {
-      print("Número Duplicado");
-  }}
+void main (List<String> arguments){
+  //sound null safety
+  
+  
+  //List <List<int?>?>? inteiros;
 
-  print(listaEntradas);
+  //List<String?>? nomes7;
+
+  //List<String>? nomes6 = null;
+  
+  //var nomes5 = <String?> [null];
+
+  //List<String?> nomes4 = [null];
+
+  // List<String?> nomes3 = ['Ana', 'Pedro'];
+  // nomes3.add(null);
+
+  // var nomes2 = [];
+  // nomes2.add(null);
+  // nomes2 [1] = null;
+
+  // var nomes1 = ['Ana', 'Pedro']; //List<String>
+  // print(nomes1.runtimeType);
+  // nomes1[0] = null;
+
+
+  // const nomes = ['Ana', 'Pedro'];
+  // nomes[0] = 'Ana Maria';
+  //erro em tempo de compilção
+  //nomes = [];
+  // final nomes = ['Ana', 'Pedro'];
+  // nomes[0] = 'Ana Maria';
+  // nomes.add('João');
+  //Isso nao vale
+  //nomes = [];
+}
+
+// import 'dart:math';
+// import 'dart:io';
+// void exercicio2(){
+//   List <int> listaEntradas = [];
+//   while (listaEntradas.length<6) {
+//     print("Digite um número: ");
+//     var entrada = stdin.readLineSync()!;
+//     var numero = int.parse(entrada);
+//     if(!listaEntradas.contains(numero)){
+//       listaEntradas.add(numero);
+//     }
+//     else {
+//       print("Número Duplicado");
+//   }}
+
+//   print(listaEntradas);
   
   /*
   Exercício. Escreva um programa que:
@@ -24,7 +61,7 @@ void exercicio2(){
   - mostra ao usuário quais números ele acertou.
   */
 
-}
+//}
 
 // void exercicio1(List <String> arguments){/*
 //     Exercício. Escreva um programa que faz a soma dos elementos recebidos como
@@ -40,8 +77,8 @@ void exercicio2(){
 //   }
 //   print (contador);
 // }
-void main(List <String> arguments){
-  exercicio2();
+// void main(List <String> arguments){
+//   exercicio2();
   //type annotation
   // var somenteStrings = <String> [];
   // print(somenteStrings);
@@ -101,4 +138,4 @@ void main(List <String> arguments){
   // print(nomes.runtimeType);
   // print(nomes);
   //print(arguments);
-}
+//}
