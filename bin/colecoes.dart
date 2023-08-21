@@ -1,16 +1,109 @@
-void main (List<String> arguments){
-  var portugues = {'Brasil', 'Portugal'};
-  var europa = {'Alemanha', 'Portugal', 'Espanha'};
-
-  //Todos os países em que se fala português e todos os países da Europa
-  print(portugues.union(europa));
-  //Todos os países em que se fala português e que são europeus.
-  print(portugues.intersection(europa));
-  //Todos os países em que se fala português e que não são europeus
-  print(portugues.difference(europa));
-  //Todos os países exceto aqueles em que se fala português e que são europeus
-  print(portugues.union(europa).difference(portugues.intersection(europa)));
+import 'dart:io';
+void exercicio1(){
+  int op;
+  do{
+    print("1-C\n2-R\n3-U\n4-D\n5-Sair");
+    op = int.parse(stdin.readLineSync()!);
+    switch(op){
+      case 1:
+        break;
+      case 2:
+        break;
+      case 3:
+        break;
+      case 4:
+        break;
+      case 5:
+        break;
+      default:
+        print("Opção inválida");
+    }
+  }while(op != 5);
 }
+
+void main (){
+  exercicio1();
+  //mapas sao colecoes de pares chave-valor
+  // var pessoa = {
+  //   'nome': 'Ana',
+  //   'idade': 25,
+  //   'altura': 1.8,
+  // };
+
+  //keys
+  // var keys = pessoa.keys;
+  // print(keys);
+  // print(keys.runtimeType);
+  // for(final key in keys){
+  //   print(key);
+  //   print(pessoa[key]);
+  // }
+  //values
+  // var valores = pessoa.values;
+  // for(final valor in valores){
+  //   print(valor);
+  // }
+  //entries
+  // var entries = pessoa.entries;
+  // for(final entry in entries){
+  //   print(entry);
+  //   print(entry.key);
+  //   print(entry.value);
+  // }
+
+
+  // var pessoa = {
+  //   'nome': 'Ana',
+  //   'altura': 1.8,
+  // };
+  // var nome = pessoa['nome'] as String;
+  // print(pessoa['nome']);
+  // print(pessoa['idade']);
+
+  //<String, Object>
+  //type annotation
+  // var pessoa = <String, Object>{
+  //   'nome': 'Ana',
+  //   'idade': 25,
+  //   'altura': 1.8,
+  // };
+
+  // Map<String, Object> pessoa = {
+  //   'nome': 'Ana',
+  // };
+
+  // var pessoa = {
+  //   'nome': 'Ana',
+  //   'nome': 'Pedro'
+  // };
+  // print(pessoa);
+
+  // var pessoa = {
+  //   'nome': 'Ana',
+  //   'altura': 1.8,
+  // };
+  // print(pessoa.runtimeType);
+  // var lembretes = {
+  //   1: 'Comprar pão',
+  //   2: 'Comprar leite',
+  // }
+  // print(lembretes.runtimeType);
+  // print(lembretes);
+}
+
+// void main (List<String> arguments){
+//   var portugues = {'Brasil', 'Portugal'};
+//   var europa = {'Alemanha', 'Portugal', 'Espanha'};
+
+//   //Todos os países em que se fala português e todos os países da Europa
+//   print(portugues.union(europa));
+//   //Todos os países em que se fala português e que são europeus.
+//   print(portugues.intersection(europa));
+//   //Todos os países em que se fala português e que não são europeus
+//   print(portugues.difference(europa));
+//   //Todos os países exceto aqueles em que se fala português e que são europeus
+//   print(portugues.union(europa).difference(portugues.intersection(europa)));
+// }
 
 // void main (List<String> arguments){
 //   //conjuntos
